@@ -35,24 +35,11 @@ A chat app that answers questions about shipping, refunds, and account help. It 
 
    Open the address Streamlit prints (usually http://localhost:8501).
 
-## Deploy to Streamlit Community Cloud
-
-1. Push this folder to a GitHub repository. Make sure `.gitignore` is in place so no key or `venv/` is uploaded.
-2. Go to share.streamlit.io, choose "New app", select the repository, and set the main file to `app.py`.
-3. Open "Advanced settings" and add this secret:
-
-   ```toml
-   GROQ_API_KEY = "your-key-here"
-   ```
-
-4. Click Deploy.
-
 ## Test checklist
 
 - [ ] "How many days do I have to return an item?" gets a sourced answer from the refund policy
 - [ ] "What is 20% of 85 dollars?" uses the calculator and returns 17
 - [ ] "Do you ship internationally?" gets the "could not find" message
-
 
 ## Known limits
 
